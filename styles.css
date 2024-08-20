@@ -1,0 +1,282 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
+
+/* Estilo de la barra lateral (side-nav) */
+.side-nav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #fff;
+    color: #333;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.side-nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+
+.side-nav.open {
+    left: 0;
+}
+
+.close-btn {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Estilo del banner */
+.banner {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+/* Estilo de la sección de productos */
+.productos {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.productos h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo de la galería de productos */
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.producto p {
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los filtros */
+.filtros {
+    padding: 20px;
+    background-color: #ececec;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filtro {
+    margin: 10px 0;
+}
+
+.filtro label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filtro select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 60%;
+    margin-top: 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Estilo de productos por categoría */
+.productos-por-categoria {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productos-por-categoria h2 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.productos-por-categoria .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.productos-por-categoria .categoria {
+    width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productos-por-categoria .categoria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.productos-por-categoria .categoria p {
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.productos-por-categoria .categoria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de las subcategorías */
+.subcategorias .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.subcategorias .categoria {
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subcategorias .categoria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.subcategorias .categoria p {
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    background-color: #fff;
+}
+
+.subcategorias .categoria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

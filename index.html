@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda para Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+        <h1>PETSWEET</h1>
+    </header>
+
+    <nav class="side-nav" id="side-nav">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="#productos-perros">Perros</a></li>
+            <li><a href="#productos-gatos">Gatos</a></li>
+            <li><a href="#productos-pajaros">Pájaros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <h2>¡Encuentra la mejor moda para tu mascota!</h2>
+        <p>Ropa y accesorios para perros, gatos y pájaros.</p>
+    </section>
+
+    <section class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="galeria">
+            <div class="producto">
+                <img src="perro.jpg" alt="Producto para Perros">
+                <p>Ropa para Perros</p>
+            </div>
+            <div class="producto">
+                <img src="gato.avif" alt="Producto para Gatos">
+                <p>Accesorios para Gatos</p>
+            </div>
+            <div class="producto">
+                <img src="pajaro.jpg" alt="Producto para Pájaros">
+                <p>Juguetes para Pájaros</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="filtros">
+        <h2>Filtrar Productos</h2>
+        <div class="filtro">
+            <label for="tipo-mascota">Tipo de Mascota:</label>
+            <select id="tipo-mascota">
+                <option value="">Seleccionar</option>
+                <option value="perro">Perros</option>
+                <option value="gato">Gatos</option>
+                <option value="pajaro">Pájaros</option>
+            </select>
+        </div>
+    
+        <div class="filtro">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+            </select>
+        </div>
+    </section>
+
+    <section class="productos-por-categoria" id="productos-perros">
+        <h2>Perros</h2>
+        <div class="subcategorias">
+            <h3>Ropa</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Ropa para Perros">
+                    <p>Chaquetas</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Ropa para Perros">
+                    <p>Abrigos</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Ropa para Perros">
+                    <p>Camisas</p>
+                </div>
+            </div>
+
+            <h3>Juguetes</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Juguetes para Perros">
+                    <p>Pelotas</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Juguetes para Perros">
+                    <p>Ropas</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Juguetes para Perros">
+                    <p>Cuero</p>
+                </div>
+            </div>
+
+            <h3>Accesorios</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Accesorios para Perros">
+                    <p>Collares</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Accesorios para Perros">
+                    <p>Correas</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriaperros.jpg" alt="Accesorios para Perros">
+                    <p>Placas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos-por-categoria" id="productos-gatos">
+        <h2>Gatos</h2>
+        <div class="subcategorias">
+            <h3>Ropa</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Ropa para Gatos">
+                    <p>Chaquetas</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Ropa para Gatos">
+                    <p>Abrigos</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Ropa para Gatos">
+                    <p>Camisas</p>
+                </div>
+            </div>
+
+            <h3>Juguetes</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Juguetes para Gatos">
+                    <p>Pelotas</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Juguetes para Gatos">
+                    <p>Ratones</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Juguetes para Gatos">
+                    <p>Plumas</p>
+                </div>
+            </div>
+
+            <h3>Accesorios</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Accesorios para Gatos">
+                    <p>Collares</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Accesorios para Gatos">
+                    <p>Areneros</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriagatos.webp" alt="Accesorios para Gatos">
+                    <p>Rascadores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos-por-categoria" id="productos-pajaros">
+        <h2>Pájaros</h2>
+        <div class="subcategorias">
+            <h3>Jaulas</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Jaulas para Pájaros">
+                    <p>Jaulas Grandes</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Jaulas para Pájaros">
+                    <p>Jaulas Medianas</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Jaulas para Pájaros">
+                    <p>Jaulas Pequeñas</p>
+                </div>
+            </div>
+
+            <h3>Juguetes</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Juguetes para Pájaros">
+                    <p>Columpios</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Juguetes para Pájaros">
+                    <p>Campanas</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Juguetes para Pájaros">
+                    <p>Espejos</p>
+                </div>
+            </div>
+
+            <h3>Accesorios</h3>
+            <div class="galeria">
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Accesorios para Pájaros">
+                    <p>Comederos</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Accesorios para Pájaros">
+                    <p>Bebederos</p>
+                </div>
+                <div class="categoria">
+                    <img src="categoriapajaros.jpg" alt="Accesorios para Pájaros">
+                    <p>Baños</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PETSWEET. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
